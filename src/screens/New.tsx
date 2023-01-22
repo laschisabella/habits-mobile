@@ -36,6 +36,8 @@ export default function New() {
 
       setTitle('')
       setWeekDays([])
+
+      Alert.alert('New habit', 'Success message')
     } catch (err) {
       console.log(err)
       Alert.alert('Oh no', 'Could not create habit')
