@@ -29,7 +29,7 @@ export default function New() {
     try {
       // validation
       if(!title.trim() || weekDays.length === 0) {
-        Alert.alert('New habit', 'Please, enter a habit and its frequency')
+        return Alert.alert('New habit', 'Please, enter a habit and its frequency')
       }
 
       await api.post('/habits', { title, weekDays })
